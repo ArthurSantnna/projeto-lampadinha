@@ -1,0 +1,27 @@
+body { backgroud: #000;}
+.bulb{
+     display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+
+ .bulb img:nth-child(2){display:none}
+ .btn{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+ 
+.btnbutton{
+    padding: 1rem 5rem;
+}
+
+
+
+
+
+
