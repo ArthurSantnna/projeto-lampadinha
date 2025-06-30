@@ -1,27 +1,120 @@
-body { backgroud: #000;}
-.bulb{
-     display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
- 
-
- .bulb img:nth-child(2){display:none}
- .btn{
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-}
- 
-.btnbutton{
-    padding: 1rem 5rem;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
 
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 20px;
+}
 
+.header h1 {
+  margin: 0;
+}
+
+.menu a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+/* Banner */
+.banner {
+  background: url('palco.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chamada {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.chamada h2 {
+  margin: 0;
+}
+
+/* Programação */
+.programacao .grid-eventos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.evento {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Galeria */
+.grid-fotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.foto {
+  background-color: #444;
+  padding: 40px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Depoimentos */
+.depoimentos .bloco {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.comentario {
+  background-color: #2a2a2a;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Rodapé */
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #1f1f1f;
+}
+
+.coluna {
+  width: 30%;
+}
+
+.mapa-falso {
+  background-color: #333;
+  padding: 40px;
+  text-align: center;
+  border-radius: 6px;
+}
 
 
 

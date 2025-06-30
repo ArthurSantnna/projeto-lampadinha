@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Arena Live Music</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    /* Cabeçalho */
+    .header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffcc00;
+    }
+
+    /* Banner */
+    .banner {
+      background-image: url('palco.jpg'); /* Substitua por uma imagem real */
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    /* Programação */
+    .programacao {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .evento {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Galeria */
+    .galeria {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+    }
+
+    .foto {
+      background-color: #ccc;
+      height: 100px;
+      border-radius: 5px;
+    }
+
+    /* Depoimentos */
+    .depoimentos {
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+
+    .depoimento {
+      margin-bottom: 20px;
+    }
+
+    .usuario {
+      font-weight: bold;
+    }
+
+    .mensagem {
+      margin-left: 10px;
+    }
+
+    /* Rodapé */
+    .footer {
+      background-color: #222;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .mapa {
+      background-color: #444;
+      width: 200px;
+      height: 100px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <div class="header">
+    <h1>Arena Live Music</h1>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Eventos</a>
+      <a href="#">Ingressos</a>
+      <a href="#">Fotos</a>
+      <a href="#">Depoimentos</a>
+      <a href="#">Contato</a>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    Viva a emoção da música ao vivo!
+  </div>
+
+  <!-- Programação -->
+  <div class="programacao">
+    <div class="evento">Evento 1 - Banda A</div>
+    <div class="evento">Evento 2 - Banda B</div>
+    <div class="evento">Evento 3 - DJ C</div>
+    <div class="evento">Evento 4 - Cantor D</div>
+    <div class="evento">Evento 5 - Banda E</div>
+    <div class="evento">Evento 6 - Banda F</div>
+    <div class="evento">Evento 7 - Banda G</div>
+    <div class="evento">Evento 8 - Banda H</div>
+  </div>
+
+  <!-- Galeria -->
+  <div class="galeria">
+    <div class="foto"></div>
+    <div class="foto"></div>
+    <div class="foto"></div>
+    <div class="foto"></div>
+    <div class="foto"></div>
+    <div class="foto"></div>
+  </div>
+
+  <!-- Depoimentos -->
+  <div class="depoimentos">
+    <div class="depoimento">
+      <div class="usuario">Maria Oliveira</div>
+      <div class="mensagem">A melhor casa de shows que já fui! Ambiente incrível.</div>
+    </div>
+    <div class="depoimento">
+      <div class="usuario">João Silva</div>
+      <div class="mensagem">Som de qualidade e programação top!</div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    <div>
+      <p><strong>Endereço:</strong></p>
+      <p>Rua das Bandas, 123 - Centro</p>
+    </div>
+    <div>
+      <p><strong>Links rápidos:</strong></p>
+      <p><a href="#">Ingressos</a></p>
+      <p><a href="#">Contato</a></p>
+    </div>
+    <div class="mapa">
+      <!-- Espaço reservado para o mapa -->
+    </div>
+  </div>
+
+</body>
+</html>
+

@@ -1,13 +1,105 @@
 <!DOCTYPE html>
-<html>
-<body style="background-color:powderblue;">
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"> <!-- Deixa acentos e caracteres especiais funcionando -->
+  <title>Inscrição Festa Junina</title> <!-- Título da página que aparece na aba -->
 
-<h1>Este é um título</h1>
-<p>Este é um parágrafo.</p>
+  <style>
+    /* Tirar espaçamentos que o navegador coloca automaticamente */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* Faz a largura e altura incluírem as bordas */
+    }
+
+     /* Fundo da página com imagem de festa junina */
+    body {
+      font-family: sans-serif; /* Fonte simples e fácil de ler */
+      background-image: url('prefund.png'); /* Imagem no fundo da página */
+      background-size: cover; /* Faz a imagem cobrir toda a tela */
+      background-position: center; /* Centraliza a imagem no fundo */
+      background-repeat: no-repeat; /* Não repete a imagem várias vezes */
+      height: 100vh; /* Altura igual a altura da tela */
+      display: flex; /* Usar flexbox para centralizar o conteúdo */
+      justify-content: center; /* Centralizar horizontalmente */
+      align-items: center; /* Centralizar verticalmente */
+    }
+
+   /* Caixa branca transparente onde fica o conteúdo */
+.tela-principal {
+  background-image: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
+  padding: 40px; /* Espaço dentro da caixa */
+  border-radius: 15px; /* Cantos arredondados */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra para dar destaque */
+  text-align: center; /* Centralizar o texto dentro da caixa */
+  max-width: 400px; /* Largura máxima da caixa */
+  width: 90%; /* Em telas menores, ocupa 90% da largura */
+  border: 3px dashed orange; /* Borda laranja com traços (estilo festa) */
+}
+
+    /* Título colorido e alegre */
+    h1 {
+      color: #d12f00; /* Vermelho forte, cor de festa junina */
+      margin-bottom: 10px; /* Espaço embaixo do título */
+    }
+
+    /* Texto explicativo */
+    p {
+      color: #444; /* Cor cinza escuro */
+      margin-bottom: 20px; /* Espaço abaixo do texto */
+    }
+
+    /* Campos de texto e botão */
+    input, button {
+      width: 100%; /* Ocupa toda a largura da caixa */
+      padding: 12px; /* Espaço interno para ficar mais confortável */
+      margin: 10px 0; /* Espaço entre os campos */
+      font-size: 16px; /* Tamanho da letra */
+      border-radius: 5px; /* Cantos arredondados */
+      border: 1px solid #ccc; /* Borda cinza clara */
+    }
+
+    /* Botão com cor vibrante */
+    button {
+      background-color: #f58220; /* Laranja forte */
+      color: white; /* Letra branca */
+      border: none; /* Sem borda extra */
+      cursor: pointer; /* Muda o mouse para a mãozinha */
+    }
+
+    /* Quando passar o mouse em cima do botão */
+    button:hover {
+      background-color: #d16600; /* Laranja mais escuro */
+    }
+
+    /* Imagem dentro da caixa */
+    img {
+      width: 100%; /* Faz a imagem ocupar toda a largura possível */
+      max-width: 300px; /* Mas não maior que 300 pixels */
+      margin-bottom: 20px; /* Espaço embaixo da imagem */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Caixa central onde fica tudo -->
+  <div class="tela-principal">
+   <img src="prepam.png"
+    <h1>Arraiá da Barnabé</h1> <!-- Título da festa -->
+    <p>Participe da nossa festa na Praça Silmo Borges!
+      Rua 20 de Setembro Barnabé
+    </p> <!-- Texto convidativo -->
+   
+    <!-- Campo para colocar o nome -->
+    <input type="text" placeholder="Seu nome completo">
+   
+    <!-- Campo para colocar o e-mail -->
+    <input type="email" placeholder="Seu e-mail">
+
+    <!-- Botão para confirmar presença -->
+    <button>Confirmar Presença</button>
+  </div>
 
 </body>
 </html>
-
-
-
-
